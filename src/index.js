@@ -7,9 +7,11 @@ module.exports = function check(str, bracketsConfig) {
                 arr = arr.replace(parentheses, "");
             }
         }
+
         if (arr == str) {
             break;
         }
+
         str = arr;
     }
     return str == "";
